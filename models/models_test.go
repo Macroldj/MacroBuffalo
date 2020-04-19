@@ -1,9 +1,9 @@
-package models_test
+package models
 
 import (
 	"testing"
 
-	"github.com/gobuffalo/packr"
+	"github.com/gobuffalo/packr/v2"
 	"github.com/gobuffalo/suite"
 )
 
@@ -12,7 +12,7 @@ type ModelSuite struct {
 }
 
 func Test_ModelSuite(t *testing.T) {
-	model, err := suite.NewModelWithFixtures(packr.NewBox("../fixtures"))
+	model, err := suite.NewModelWithFixtures(packr.New("app:models:test:fixtures", "../fixtures"))
 	if err != nil {
 		t.Fatal(err)
 	}

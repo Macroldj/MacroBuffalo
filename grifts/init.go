@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"github.com/chenghung/buffalo_api/actions"
+	"MacroBuffalo/actions"
 	"github.com/gobuffalo/buffalo"
 )
 
