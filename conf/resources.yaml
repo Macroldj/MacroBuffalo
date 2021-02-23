@@ -1,0 +1,27 @@
+HttpPort: 8000
+appname: api_project
+runmode: dev
+autorender: false
+copyrequestbody: true
+EnableDocs: true
+
+mysql:
+  user : root
+  password : root
+  server: tcp
+  host : 49.234.134.105
+  port : 3306
+  name : macrogin
+  maxIdleConns: 20
+  maxOpenConns: 100
+
+redis:
+  Addr: 49.234.134.105:6379
+  Password: ""
+  MaxRetries: 3
+  DialTimeout: 5
+  WriteTimeout: 2
+  PoolSize: 20
+  PoolTimeout: 0
+  IdleTimeout: 0
+  DB: 0
